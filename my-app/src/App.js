@@ -47,7 +47,9 @@ console.log(this.state.followers);
           propsBio={this.state.user.bio}
           propsCreated={this.state.user.created_at}
         />
-       <UserList propsname={this.state.followers.name}/>
+       <UserList 
+       followersList={this.state.followers}
+        />
 
       </div>
     </div>

@@ -2,13 +2,17 @@ import React from 'react';
 
 
 const UserList = (props) => {
-console.log(props.followers);
+console.log(props.followersList);
     return(
-        // console.log(this.props);
-
-        <div>
-            <p>does this show up? on list-> {props.propsname}</p>
-            <p>{}</p>
+       
+        <div> 
+            {props.followersList.map(thefollowers => 
+                <div className="follower-card" >
+                    <p className="followerName" >{thefollowers.login}</p>
+                    <img className="followerPic" src={thefollowers.avatar_url} alt=""/>
+                </div>
+           
+                )}
         </div>
     );
 
