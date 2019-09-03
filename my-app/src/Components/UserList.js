@@ -9,7 +9,7 @@ console.log(props.followersList);
             {props.followersList.map(thefollowers => 
                 <div className="follower-card" >
                     <p className="followerName" >{thefollowers.login}</p>
-                    <img className="followerPic" src={thefollowers.avatar_url} alt=""/>
+                    <img className="followerPic" src={thefollowers.avatar_url}  alt={thefollowers.name}/>
                 </div>
            
                 )}
