@@ -37,7 +37,6 @@ console.log(this.state.followers);
 
   return (
     <div className="App">
-      <div>
         <UserCard 
           propsname={this.state.user.name}
           propsimg={this.state.user.avatar_url}
@@ -51,7 +50,6 @@ console.log(this.state.followers);
        followersList={this.state.followers}
         />
 
-      </div>
     </div>
   );
   }
